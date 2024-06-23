@@ -1,0 +1,124 @@
+:root {
+    --title-bg: #f8f9fa;
+    --page: #ffffff;
+    --bg: #e6e6e6;
+    --title: #000000;
+    --desc: #666666;
+    --shadow-rgb: 149, 157, 165;
+    --bs-border-color: #e0e0e0;
+    --bs-border-color-hover: #cccccc;
+}
+
+[data-bs-theme="dark"] {
+    --bs-tertiary-bg: #262626;
+    --bs-body-bg: #181818;
+    --title-bg: #262626;
+    --form-bg: #1e1e1e;
+    --page: #191919;
+    --bg: #222222;
+    --title: #ffffff;
+    --desc: #cccccc;
+    --shadow-rgb: 0, 0, 0;
+    --bs-border-color: #3d3d3d;
+    --bs-border-color-hover: #666666;
+    --bs-border-radius: 10px;
+}
+
+body, html {
+    background-color: var(--bg);
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
+
+.content {
+    background-color: var(--page);
+    padding: 4vw;
+    height: 100%;
+    box-shadow: rgba(var(--shadow-rgb), .1) 0 8px 24px;
+}
+
+.control-form, .list-group-item {
+    box-shadow: 0 2px 4px 0 rgba(var(--shadow-rgb), .04);
+}
+
+[data-bs-theme="dark"] .control-form,
+[data-bs-theme="dark"] .list-group-item {
+    box-shadow: 0 10px 10px rgba(var(--shadow-rgb), .1), 0 6px 3px rgba(var(--shadow-rgb), .12);
+}
+
+.input-group-text {
+    width: 100px;
+}
+
+.border {
+    border-color: var(--bs-border-color) !important;
+}
+
+.title-bg, .list-group-item {
+    background-color: var(--title-bg);
+    border: var(--bs-border-color) 1px solid;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #707070;
+    box-shadow: none;
+}
+
+.list-group {
+    gap: 10px;
+}
+
+.list-group-item {
+    border: var(--bs-border-color) 1px solid !important;
+    border-radius: 10px !important;
+    transition-property: border-color, box-shadow, background-color;
+    transition-duration: .3s;
+    padding: 13px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.list-group-item:hover {
+    box-shadow: 0 2px 8px 0 rgba(var(--shadow-rgb), .1);
+    border-color: var(--bs-border-color-hover) !important;
+    cursor: pointer;
+}
+
+[data-bs-theme="dark"] .list-group-item:hover {
+    box-shadow: 0 10px 20px rgba(var(--shadow-rgb), .19), 0 6px 6px rgba(var(--shadow-rgb), .23);
+}
+
+.form-bg {
+    background-color: var(--form-bg);
+}
+
+.task-checkbox {
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 28px;
+}
+
+.circle {
+    width: 16px;
+    height: 16px;
+    border: #a9a9a9 1px solid;
+    border-radius: 50%;
+}
+
+.task-data {
+    color: var(--title);
+    margin-top: -4px;
+    font-size: 14px;
+}
+
+.task-desc {
+    color: var(--desc);
+    line-height: 1.4em;
+    font-size: 12px;
+}
