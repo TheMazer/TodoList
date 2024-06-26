@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="row g-0">
-        <div class="col-12 col-md-8 mx-auto px-md-5">
+        <div class="col-12 col-lg-8 mx-auto px-lg-5">
             <div class="content">
 
                 <div class="header">
@@ -19,14 +19,14 @@
                 </div>
 
                 <div class="control-form rounded-bottom">
-                    <div class="container mt-4 px-4 py-2 border rounded-top title-bg">
+                    <div class="mt-4 px-4 py-2 border rounded-top title-bg">
                         <label>Create Task</label>
                     </div>
     
-                    <div class="container p-4 border border-top-0 rounded-bottom form-bg">
+                    <div class="p-4 border border-top-0 rounded-bottom form-bg">
                         <form>
                             <div class="row">
-                                <div class="col-10">
+                                <div class="col">
                                     <div class="input-group mb-3">
                                         <label class="input-group-text">
                                             <i class="bi bi-pencil-square"></i>
@@ -35,29 +35,36 @@
                                         <input id="task-name" type="text" class="form-control focus-visible" placeholder="Task name">
                                     </div>
                                 </div>
-                                <div class="col ps-0">
-                                    <button class="btn btn-primary w-100">Create</button>
+                                <div class="col-sm-3">
+                                    <button class="btn btn-primary mb-3 w-100">Create</button>
                                 </div>
                             </div>
-    
+
                             <div class="row">
                                 <div class="col">
                                     <div class="input-group mb-3">
-                                        <label class="input-group-text">
-                                            <i class="bi bi-flag"></i>
-                                            <span class="ms-2">Priority</span>
-                                        </label>
-                                        <select class="form-select" id="inputGroupSelect01">
-                                            <option value="1">High</option>
-                                            <option selected value="2">Normal</option>
-                                            <option value="3">Low</option>
-                                        </select>
+                                        <label for="descTextarea" class="form-label" style="width: 100px;">Description</label>
+                                        <textarea class="form-control" id="descTextarea" rows="2" placeholder="Description goes here..."></textarea>
                                     </div>
                                 </div>
                             </div>
     
                             <div class="row">
-                                <div class="col">
+                                <div class="col-sm-6 col-12 mb-3 mb-sm-0">
+                                    <div class="input-group">
+                                        <label class="input-group-text">
+                                            <i class="bi bi-flag"></i>
+                                            <span class="ms-2">Priority</span>
+                                        </label>
+                                        <select class="form-select" id="inputGroupSelect01">
+                                            <option value="4">Critical</option>
+                                            <option value="3">High</option>
+                                            <option value="2">Normal</option>
+                                            <option selected value="1">Default</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
                                     <div class="input-group">
                                         <label class="input-group-text">
                                             <i class="bi bi-calendar-plus"></i>
@@ -74,16 +81,24 @@
 
                 <ul class="list-group mt-4">
                     <li class="list-group-item">
-                        <div class="task-checkbox"><span class="circle"></span></div>
+                        <div class="task-checkbox"><span class="circle p4"></span></div>
                         <div class="task-data">
                             <div class="task-info">🧑🏻‍💻 Task 1</div>
                             <div class="task-desc">Lorem ipsum dolor sit</div>
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <div class="task-checkbox"><span class="circle"></span></div>
+                        <div class="task-checkbox"><span class="circle p3"></span></div>
+                        <div class="task-data">
+                            <div class="task-info">⚡ Task 2</div>
+                            <div class="task-desc">Detailed Description</div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="task-checkbox"><span class="circle p2"></span></div>
                         <div class="task-data">
                             <div class="task-info">📚 Tasks</div>
+                            <div class="task-desc"></div>
                         </div>
                     </li>
                     <li class="list-group-item">

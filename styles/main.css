@@ -26,7 +26,7 @@
 
 body, html {
     background-color: var(--bg);
-    height: 100%;
+    height: calc(100% - 1px);
 }
 
 .row {
@@ -38,6 +38,10 @@ body, html {
     padding: 4vw;
     height: 100%;
     box-shadow: rgba(var(--shadow-rgb), .1) 0 8px 24px;
+}
+
+form * {
+    --bs-gutter-x: 12px !important;
 }
 
 .control-form, .list-group-item {
@@ -109,6 +113,24 @@ body, html {
     height: 16px;
     border: #a9a9a9 1px solid;
     border-radius: 50%;
+}
+
+.p2 {
+    border-width: 2px;
+    border-color: #5297ff;
+    background-color: rgb(82, 151, 255, .1);
+}
+
+.p3 {
+    border-width: 2px;
+    border-color: #ff9a13;
+    background-color: rgb(255, 154, 19, .1);
+}
+
+.p4 {
+    border-width: 2px;
+    border-color: #ff7066;
+    background-color: rgb(255, 112, 102, .1);
 }
 
 .task-data {
